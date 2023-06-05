@@ -15,7 +15,7 @@ body {
     padding: 20px;
 }
 
-.list h1 { 
+.list h1, .list p { 
     text-align: center;
     color: #3f3f3f;
 }
@@ -25,7 +25,9 @@ ul {
     padding: 0;
 }
 
-li { 
+li {
+    display: flex;
+    justify-content: space-around;
     line-height: 30px;
     background-color: #ffffff;
     margin-top: 4px;
@@ -49,4 +51,23 @@ li {
     color: white;
     font-size: 20px;
     cursor: pointer;
+}
+
+#item-lista {
+    padding-left: 10px;
+    border: none;
+    width: 75%;
+}
+
+.del-button { 
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.del-button:hover { 
+    background-color: rgb(199, 7, 7);
 }
